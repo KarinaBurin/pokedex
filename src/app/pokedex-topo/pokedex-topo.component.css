@@ -1,0 +1,41 @@
+.topo{
+    background-color: #303134; 
+    /* background-color: #e3e3e3; */
+    /* border-bottom: 1px solid #e3e3e3; */
+    border-bottom: 1px solid #0a0a0a;
+    box-shadow: 0 1px 6px 0 #171717;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+img{
+    margin-left: 20px;
+    padding: 5px;
+    width: 114px;
+    height: 41px;
+}
+
+.toogle{
+    margin-right: 6px;
+    padding: 14px;
+}
+
+.label-toogle{
+    font-family: monospace;
+    font-size: 18px;
+    /* color: #020000; */
+    color: #f1e7e7;
+    font-weight: bold;
+    padding: 10px;
+}
+
+::ng-deep 
+.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+    background-color: #171717;
+}
+
+::ng-deep  .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+    background-color: #fff ;
+}

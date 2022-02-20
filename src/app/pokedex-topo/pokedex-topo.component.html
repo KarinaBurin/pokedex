@@ -1,0 +1,16 @@
+<div class="topo">
+  <img
+    src=".\assets\topo.png"
+  />
+  <div class="toogle">
+    <label class="label-toogle">{{ cor }}</label>
+    <mat-slide-toggle
+      [checked]="isChecked"
+      [(ngModel)]="isChecked"
+      (toggleChange)="changeToogle()"
+      ></mat-slide-toggle
+    >
+  </div>
+</div>
+
+

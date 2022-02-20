@@ -1,0 +1,14 @@
+<div
+  class="pokedex-card"
+  [ngStyle]="{
+    backgroundColor: toogleFundo ? '#f7f4f4' : '#303134'
+  }"
+>
+  <img [src]="resultUrlImag" />
+  <br /><b
+    [ngStyle]="{
+      color: toogleFundo ? '#303134' : '#e3e3e3'
+    }"
+    >{{ pokemon }}</b
+  >
+</div>
