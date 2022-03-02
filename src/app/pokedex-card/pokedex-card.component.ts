@@ -8,7 +8,7 @@ import { PokedexService } from '../pokedex.service';
 })
 export class PokedexCardComponent implements OnInit {
   @Input() pokemon: string = '';
-  @Input() numero: number = 0;
+  @Input() numero: any;
   toogleFundo: boolean = false;
   resultUrlImag: any;
 

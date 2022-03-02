@@ -1,23 +1,30 @@
 <div class="conteudo">
-  <div class="source">
+  <!-- <div class="source">
     <mat-icon class="icone" aria-hidden="false" aria-label="Example home icon"
       >searched</mat-icon
     >
-    <input type="text" placeholder="Nome do Pokemon" />
-  </div>
+    <mat-form-field appearance="fill">
+      <mat-label>Input</mat-label>
+      <input matInput>
+    </mat-form-field>
+
+  </div> -->
 
   <mat-card class="pokedex-list">
     <app-pokedex-card
       *ngFor="
-        let pokemon of pokedexService.pokemons | paginate : {
-                itemsPerPage: 14,
+        let pokemon of pokedexService.pokemons
+        | paginate
+            : {
+                itemsPerPage: itemsPerPage,
                 currentPage: paginaAtual
               };
         let i = index
       "
       [pokemon]="pokemon.name"
-      [numero]="i + 1"
+      [numero]="itemsPerPage * (paginaAtual - 1) + i + 1"
     >
+  
     </app-pokedex-card>
   </mat-card>
   <pagination-controls

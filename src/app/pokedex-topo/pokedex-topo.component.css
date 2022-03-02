@@ -1,7 +1,5 @@
 .topo{
     background-color: #303134; 
-    /* background-color: #e3e3e3; */
-    /* border-bottom: 1px solid #e3e3e3; */
     border-bottom: 1px solid #0a0a0a;
     box-shadow: 0 1px 6px 0 #171717;
     display: flex;
@@ -23,11 +21,8 @@ img{
 }
 
 .label-toogle{
-    font-family: monospace;
     font-size: 18px;
-    /* color: #020000; */
     color: #f1e7e7;
-    font-weight: bold;
     padding: 10px;
 }
 

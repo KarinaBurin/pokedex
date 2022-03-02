@@ -6,6 +6,7 @@ import { EventEmitter, Injectable } from "@angular/core";
 })
 export class PokedexService {
   emitirChangeToogle = new EventEmitter<boolean>();
+  emitirNumeroUrl = new EventEmitter<any>();
 
   check = true;
   pokemons:  any = [];
